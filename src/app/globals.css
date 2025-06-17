@@ -88,6 +88,16 @@ body {
 }
 
 .tiptap {
+  /* Link styles */
+  a {
+    @apply text-blue-600;
+    cursor: pointer;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+    
   /* Image-specific styling */
   img {
     display: block;
@@ -138,7 +148,6 @@ body {
       pointer-events: none;
       position: absolute;
       z-index: 2;
-      
     }
 
     .column-resize-handle {
