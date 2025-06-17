@@ -4,8 +4,10 @@ import StarterKit from "@tiptap/starter-kit";
 import TaskItem from "@tiptap/extension-task-item";
 import TaskList from "@tiptap/extension-task-list";
 import Image from "@tiptap/extension-image";
-import TextStyle from '@tiptap/extension-text-style'
-import FontFamily from '@tiptap/extension-font-family'
+import { Color } from "@tiptap/extension-color";
+import Highlight from "@tiptap/extension-highlight";
+import TextStyle from "@tiptap/extension-text-style";
+import FontFamily from "@tiptap/extension-font-family";
 import ImageResize from "tiptap-extension-resize-image";
 import Table from "@tiptap/extension-table";
 import TableCell from "@tiptap/extension-table-cell";
@@ -52,6 +54,8 @@ export const Editor = () => {
     },
     extensions: [
       StarterKit,
+      Color,
+      Highlight.configure({ multicolor: true }),
       FontFamily,
       TextStyle,
       Underline,
