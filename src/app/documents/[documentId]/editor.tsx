@@ -57,7 +57,7 @@ export const Editor = () => {
     extensions: [
       StarterKit,
       TextAlign.configure({
-        types: ["heading", "paragraph"],
+        types:["heading","paragraph"]
       }),
       Link.configure({
         openOnClick: false,
