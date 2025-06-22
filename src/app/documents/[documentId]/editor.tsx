@@ -19,6 +19,7 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import { useEditorStore } from "@/store/use-editor-store";
 import Underline from "@tiptap/extension-underline";
 import { FontSizeExtension } from "@/extensions/font-size";
+import { LineHeightExtension } from "@/extensions/line-height";
 
 export const Editor = () => {
   const { setEditor } = useEditorStore();
@@ -57,6 +58,7 @@ export const Editor = () => {
     },
     extensions: [
       StarterKit,
+      LineHeightExtension,
       FontSizeExtension,
       TextAlign.configure({
         types: ["heading", "paragraph"],
