@@ -1,9 +1,10 @@
 "use client";
 
 import { usePaginatedQuery } from "convex/react";
-import { Navbar } from "./navbar";
-import { TemplatesGallery } from "./templates-gallery";
 
+import { Navbar } from "./navbar";
+import { DocumentsTable } from "./documents-table";
+import { TemplatesGallery } from "./templates-gallery";
 import { api } from "../../../convex/_generated/api";
 
 const Home = () => {
